@@ -1,0 +1,231 @@
+
+/*--GENERAL--*/
+
+body {
+	background-color: rgba(255, 192, 203, 0.7);
+}
+* {
+	box-sizing: border-box;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Handlee', cursive;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+a {
+	text-decoration: none;
+}
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+
+/*--HEADER--*/
+
+header {
+	background: url("../images/1.jpg");
+	background-size: cover;
+	color: purple;
+	padding-top: 20px;
+	text-align: center;
+}
+nav ul {
+	list-style: none;
+	padding: 20px 0;
+	background-color: rgba(173, 216, 230, 0.6);
+	border-radius: 30px;
+	display: flex;
+	justify-content: space-around;
+}
+nav ul li a {
+	color: purple;
+	text-transform: uppercase;
+	padding: 4px 10px;
+	border-radius: 10px;
+	font-size: 18px;
+	font-weight: bold;
+	border: 4px solid transparent;
+}
+nav ul li a:hover {
+	border: 4px solid pink;
+}
+header h1 {
+	margin-bottom: 0px;
+	font-size: 30px;
+}
+header h2 {
+	margin-top: 0px;
+	margin-bottom: 30px;
+	font-size: 21px;
+}
+.selected {
+	background-color: pink;
+}
+
+
+ /*--PAGES--*/
+
+.main-content {
+	padding: 10px;
+}
+h3 {
+	color: purple;
+}
+
+/*----PORTFOLIO--*/
+.projekat {
+	width: 100%;
+	max-height: 600px;
+	margin: 70px auto;
+	background-color: rgba(255, 255, 255, 0.6);
+	border: 1px solid rgba(128, 0, 128, 0.5);
+	border-radius: 10px;
+	overflow: hidden;
+}
+.projekat a img {
+	border-bottom: 1px solid rgba(128, 0, 128, 0.3);
+}
+.projekat section {
+	padding: 30px;
+}
+.projekat section h1 {
+	font-size: 18px;
+	margin: 0;
+	text-transform: uppercase;
+}
+.projekat section h1 a {
+	color: purple;
+}
+.projekat section p {
+	font-size: 14px;
+	text-align: justify;
+}
+
+/*----O MENI--*/
+.profile-photo {
+	max-width: 150px;
+	margin: 0 auto 50px;
+	display: block;
+	border-radius: 50%;
+}
+
+/*----CV--*/
+.osnovno {
+	margin: 40px;
+}
+.osnovno h2 {
+	color: purple;
+	padding-left: 20px;
+}
+.osnovno dt {
+	font-style: italic;
+	padding: 5px;
+}
+.osnovno dd {
+	font-size: 18px;
+}
+.podaci h3 {
+	padding: 5px;
+	border-top: 2px solid purple;
+	border-bottom: 2px solid purple;
+}
+
+/*----KONTAKT--*/
+
+.kontakt-info {
+	margin-bottom: 50px;
+}
+.kontakt-detalji ul {
+	list-style: none;
+	padding: 0;
+}
+.kontakt-detalji ul li {
+	margin-bottom: 10px;
+}
+.kontakt-detalji ul li span {
+	margin-right: 10px;
+}
+.fa-envelope {
+	font-size: 13px;
+}
+.fa-phone-square {
+	font-size: 15px;
+}
+.fa {
+	color: purple;
+}
+
+
+/*--FOOTER--*/
+
+footer {
+	background: url("../images/1.jpg");
+	background-size: cover;
+	text-align: center;
+}
+footer p {
+	margin-bottom: 0;
+	padding-bottom: 20px;
+	color: purple;
+}
+footer span {
+	font-size: 30px!important;
+	color: purple;
+	padding: 10px;
+}
+/*NE ZNAM KAKO DA ZALEPIM FOOTER ZA DNO STRANICE 
+KADA IMA MALO SADRZAJA!!!*/
+
+
+/*--MEDIA QUERIES--*/
+
+@media screen and (min-width: 960px) {
+	header {
+		text-align: initial;
+	}
+	header .container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	header .header {
+		display: flex;
+		align-items: center;
+	}
+	header h1, header h2, nav ul {
+		margin: 0;
+		padding-left: 20px;
+	}
+	nav ul {
+		background-color: transparent;
+	}
+	.main-content {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.projekat {
+		width: 30%;
+		margin: 30px auto;
+	}
+	.profile-photo {
+		margin: 50px;
+		float: left;
+	}
+	.kontakt-info {
+		width: 65%;
+	}
+	.kontakt-detalji {
+		width: 34%;
+		padding-left: 10%;
+		vertical-align: top;
+	}
+	.kontakt-info, .kontakt-detalji {
+		display: inline-block;
+	}
+}
+ /*i jos jednom: NE ZNAM KAKO DA ZALEPIM FOOTER ZA DNO STRANICE 
+ KADA IMA MALO SADRZAJA!!!*/
